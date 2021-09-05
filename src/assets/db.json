@@ -1,0 +1,25 @@
+{
+  "Hotel": [
+    {
+      "id": 1,
+      "hotelName": "aa",
+      "hotelPlace": "aa",
+      "address": "aa",
+      "rate": "ss"
+    },
+    {
+      "id": 2,
+      "hotelName": "aa",
+      "hotelPlace": "aa",
+      "address": "aa",
+      "rate": "ss"
+    },
+    {
+      "id": 3,
+      "hotelName": "ssss",
+      "hotelPlace": "a",
+      "address": "ss",
+      "rate": "sd"
+    }
+  ]
+}

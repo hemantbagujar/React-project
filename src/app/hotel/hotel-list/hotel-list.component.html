@@ -1,0 +1,27 @@
+
+<div class="text-left">
+<h4>Hotel-list works!</h4>
+<table border="3px">
+    <tr>
+         <th>Id</th>
+         <th>HotelName</th>
+        <th>HotelPlace</th>
+        <th>Address</th>
+        <th>Rate</th>
+        <th>Edit</th>
+        <th>Delete</th>
+     </tr>
+     <tr *ngFor='let aa of dataHotel'>
+         <td>{{aa.id}}</td>
+         <td>{{aa.hotelName}}</td>
+         <td>{{aa.hotelPlace}}</td>
+         <td>{{aa.address}}</td>
+         <td>{{aa.rate}}</td>
+         <td><button (click)="editHotel(aa)">Edit</button></td>
+         <td> <button (click)="deleteHotel(aa.id)">Delete</button></td>
+     </tr> 
+
+
+
+
+</table>

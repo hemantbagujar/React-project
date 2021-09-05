@@ -1,0 +1,62 @@
+<div class="text-center">
+    <h4> Hotel customer detils form </h4>
+    <div class="col-md-6">
+        <div class="emp-form">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input placeholder="company Name" class="form-control" [(ngModel)]="hotelService.hotel.hotelName">
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <input placeholder="ModelNo" class="form-control" [(ngModel)]="hotelService.hotel.hotelPlace">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <input placeholder="customerName" class="form-control" [(ngModel)]="hotelService.hotel.address">
+                </div>
+
+
+                <div class="col-md-6 form-group">
+                    <input placeholder="Price" class="form-control" [(ngModel)]="hotelService.hotel.rate">
+
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Hotel items</li>
+                        <li><a href="#">Tea</a></li>
+                        <li><a href="#">Panibottel</a></li>
+                        <li><a href="#">Kachori</a></li>
+                    </ul>
+                </div><br>
+
+
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <button class="btn btn-success btn-lg btn-block" (click)="onSubmit()">
+                            <i class="fa fa-save"></i>
+                            SAVE
+                        </button>
+
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-primary btn-lg btn-block">
+                            <i class="fa fa-retweet"></i>
+                            CLEAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br><br><br><br><br><br>
+
+
+        <app-hotel-list></app-hotel-list>
